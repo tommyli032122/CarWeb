@@ -8,14 +8,14 @@ let reservationFormData = null;
 // Load cars.json via AJAX
 function loadCarsData(callback) {
     // Try both absolute and relative paths for compatibility with Live Server and deployment
-    $.getJSON('data/cars.json')
+    $.getJSON('/Car_web/data/cars.json')
         .done(function(data) {
             carsData = data;
             if (callback) callback();
         })
         .fail(function() {
             // Try with leading slash if first attempt fails
-            $.getJSON('/data/cars.json')
+            $.getJSON('/Car_web/data/cars.json')
                 .done(function(data) {
                     carsData = data;
                     if (callback) callback();
@@ -150,7 +150,7 @@ function setupRentButton() {
         const car = carsData.find(c => c.vin === vin);
         if (car && car.available) {
             saveLastClickedCar(car);
-            window.location.href = '/templates/reservation.html';
+            window.location.href = '/Car_web/templates/reservation.html';
         }
     });
 }
@@ -176,12 +176,12 @@ function renderReservationPage() {
         return;
     }
     // Try both relative and absolute paths for AJAX
-    $.getJSON('data/cars.json')
+    $.getJSON('/Car_web/data/cars.json')
         .done(function(data) {
             renderReservationCarDetail(data, $content);
         })
         .fail(function() {
-            $.getJSON('/data/cars.json')
+            $.getJSON('/Car_web/data/cars.json')
                 .done(function(data) {
                     renderReservationCarDetail(data, $content);
                 })
@@ -317,7 +317,7 @@ function setupReservationForm(car) {
     // Cancel button
     $('#cancelBtn').on('click', function() {
         localStorage.removeItem('reservationFormData');
-        window.location.href = '/index.html';
+        window.location.href = '/Car_web/index.html';
     });
 
     // Submit event
@@ -325,12 +325,12 @@ function setupReservationForm(car) {
         e.preventDefault();
         if (!validateReservationForm($form)) return;
         // Simulate AJAX order submission
-        $.getJSON('data/cars.json')
+        $.getJSON('/Car_web/data/cars.json')
             .done(function(data) {
                 handleOrderSubmission(data, car);
             })
             .fail(function() {
-                $.getJSON('/data/cars.json')
+                $.getJSON('/Car_web/data/cars.json')
                     .done(function(data) {
                         handleOrderSubmission(data, car);
                     })
