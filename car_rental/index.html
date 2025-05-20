@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental - Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+    <!-- Logo & Header -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <i class='bx bx-car'></i> 
+                <span class="site-title">Go Car</span>
+            </a>
+        </div>
+
+            <!-- Search & Filters -->
+        <section class="search-filter-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by type, brand, model, description...">
+                <ul id="suggestionList" class="suggestion-list"></ul>
+            </div>
+            <div class="filters">
+                <select id="filterType">
+                    <option value="">All Types</option>
+                    <!-- Dynamically generated type options -->
+                </select>
+                <select id="filterBrand">
+                    <option value="">All Brands</option>
+                    <!-- Dynamically generated brand options -->
+                </select>
+            </div>
+        </section>
+
+
+        <div class="reservation-icon-container">
+            <a href="/templates/reservation.html" title="Go to Reservation Page">
+                <i class='bx bx-cart'></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Car Grid -->
+    <main>
+        <div id="carGrid" class="car-grid">
+            <!-- AJAX loaded car data -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Car Rental. All rights reserved.</p>
+    </footer>
+</body>
+</html>
