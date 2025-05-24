@@ -37,5 +37,83 @@
     "price_per_day": 120,
     "description": "A powerful and stylish coupe offering an exhilarating driving experience.",
     "vin": "1FA6P8TH6J5134567"
-  }
+  },
+  {
+  "type": "Convertible",
+  "brand": "Mazda",
+  "model": "MX-5",
+  "image": "/Car_web/static/images/car4.jpg",
+  "yearOfManufacture": 2019,
+  "mileage": "25,000 km",
+  "fuelType": "Gasoline",
+  "available": true,
+  "price_per_day": 80,
+  "description": "Fun-to-drive convertible perfect for weekend getaways.",
+  "vin": "JM1NDAD7XK0301123"
+},
+{
+  "type": "Pickup",
+  "brand": "Nissan",
+  "model": "Navara",
+  "image": "/Car_web/static/images/car5.jpg",
+  "yearOfManufacture": 2017,
+  "mileage": "70,000 km",
+  "fuelType": "Diesel",
+  "available": true,
+  "price_per_day": 75,
+  "description": "Rugged pickup truck suitable for both work and adventure.",
+  "vin": "1N6AD0EV6GN763452"
+},
+{
+  "type": "Minivan",
+  "brand": "Kia",
+  "model": "Carnival",
+  "image": "/Car_web/static/images/car6.jpg",
+  "yearOfManufacture": 2020,
+  "mileage": "40,000 km",
+  "fuelType": "Gasoline",
+  "available": false,
+  "price_per_day": 70,
+  "description": "Family-friendly minivan with plenty of space and features.",
+  "vin": "KNDMB5C19L6639082"
+},
+{
+  "type": "Sedan",
+  "brand": "Hyundai",
+  "model": "Elantra",
+  "image": "/Car_web/static/images/car7.jpg",
+  "yearOfManufacture": 2015,
+  "mileage": "60,000 km",
+  "fuelType": "Gasoline",
+  "available": true,
+  "price_per_day": 52,
+  "description": "Comfortable and stylish sedan ideal for long drives.",
+  "vin": "5NPDH4AE1FH623891"
+},
+{
+  "type": "Hatchback",
+  "brand": "Volkswagen",
+  "model": "Golf",
+  "image": "/Car_web/static/images/car8.jpg",
+  "yearOfManufacture": 2018,
+  "mileage": "20,000 km",
+  "fuelType": "Gasoline",
+  "available": true,
+  "price_per_day": 65,
+  "description": "Compact hatchback with a sporty design and great handling.",
+  "vin": "WVWED7AJ1JW123456"
+},
+{
+  "type": "SUV",
+  "brand": "Chevrolet",
+  "model": "Tahoe",
+  "image": "/Car_web/static/images/car9.jpg",
+  "yearOfManufacture": 2021,
+  "mileage": "10,000 km",
+  "fuelType": "Gasoline",
+  "available": false,
+  "price_per_day": 100,
+  "description": "Large SUV with ample space and advanced technology features.",
+  "vin": "1GNSKCKC5MR123456"
+}
 ]
